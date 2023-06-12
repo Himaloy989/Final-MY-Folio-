@@ -1,0 +1,379 @@
+/* Common css start */
+:root {
+  --primary-color: #02918b;
+  --secondary-color: #ffffff;
+  --highlight-color: #cfc91d;
+  --dark-color: #0b1016;
+}
+* {
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container {
+  width: 1170px;
+  margin: auto;
+}
+.common_info {
+  text-align: center;
+}
+.common_info h2 {
+  font-size: 46px;
+  font-weight: 800;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+.common_info p {
+  font-size: 16px;
+  color: #7e8287;
+  margin: auto;
+  line-height: 41px;
+}
+
+/* Common css end */
+
+/* Nav css start */
+#navigation {
+  background: var(--primary-color);
+}
+/* #navigation.active */
+#navigation div.row {
+  justify-content: space-between;
+  align-items: center;
+}
+#navigation .menu ul li a {
+  display: inline-block;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 16px 25px;
+  margin: 10px 0;
+  transition: 0.8s;
+}
+#navigation ul li:hover a {
+  background-color: #cfc91d;
+  color: #0b1016;
+  border-radius: 20px;
+}
+/* #navigation .menu #glass{
+    font-size: 20px;
+    background-color: var(--primary-color);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    align-items: center;
+    display: block;
+    color: #ffffff;
+    cursor: pointer;
+} */
+/* #navigation .menu ul.row{
+    align-items: center;
+} */
+/* #navigation #search{
+    padding: 7px 0 7px 20px;
+    text-align: center;
+    transform: scale(0);
+    position: relative;
+} */
+#navigation #search.show {
+  transform: scale(1);
+}
+/* #navigation .menu #cross{
+    font-size: 20px;
+    background-color: var(--primary-color);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    align-items: center;
+    display: block;
+    color: #ffffff;
+    cursor: pointer;
+    transform: scale(1);
+} */
+/* #navigation #search.remove{
+    transform: scale(0);
+} */
+
+/* Nav css end */
+
+/* Banner css start */
+#banner {
+  background-image: url(../img/Banner_bg.jpg);
+  height: 728px;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+#banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #0b1016;
+  opacity: 0.7;
+  z-index: -1;
+}
+#banner .container {
+  height: 100%;
+}
+#banner .row {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+#banner h3 {
+  font-size: 30px;
+  font-weight: 400;
+}
+#banner h1 {
+  font-size: 68px;
+  font-weight: 800;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+}
+#banner p {
+  font-size: 18px;
+}
+#banner img {
+  display: block;
+  margin: 52px auto;
+}
+#banner a {
+  color: var(--secondary-color);
+  background: var(--highlight-color);
+  padding: 20px 42px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: 0.7s;
+}
+#banner .banner_info a:hover {
+  color: #0b1016;
+  background-color: #0ef;
+  box-shadow: 0 0 10px #0ef;
+  border-radius: 15px;
+}
+/* Banner css end*/
+/* About css start */
+#about {
+  padding: 100px 0;
+}
+#about .common_info p {
+  width: 878px;
+}
+#about .common_info p b {
+  font-size: 23px;
+  font-weight: 800;
+}
+#about .about_items {
+  width: 25%;
+  text-align: center;
+  border-right: 1px solid grey;
+  padding: 60px 60px;
+  margin-top: 60px;
+}
+#about .about_items:last-child {
+  border-right: none;
+}
+#about .about_items h4 {
+  font-size: 16px;
+  color: #7e8287;
+  line-height: 23px;
+  padding: 28px 0;
+}
+#about .about_items p {
+  font-size: 11px;
+  line-height: 21px;
+  color: #7e8287;
+}
+/* About css end */
+
+/* Service css start */
+#service {
+  background: url(../img/Service_bg-2.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 74px 87px;
+}
+#service .inner_container {
+  width: 50%;
+}
+#service .common_info {
+  text-align: left;
+  margin-bottom: 58px;
+}
+
+#service .service_items {
+  width: 50%;
+  padding-right: 110px;
+  margin-bottom: 58px;
+}
+#service .service_items p {
+  font-size: 11px;
+  color: #7e8287;
+  line-height: 21px;
+}
+#service .service_items h4 {
+  color: #7e8287;
+  padding: 25px 0 28px 0;
+}
+/* Service css End */
+
+/* My Work css start */
+#mywork {
+  padding: 110px 0;
+}
+#mywork .common_info {
+  margin-bottom: 82px;
+}
+#mywork .common_info p {
+  width: 686px;
+}
+#mywork .mywork_item {
+  width: 25%;
+}
+#mywork .mywork_item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#mywork .mywork_item .overlay {
+  position: absolute;
+  z-index: 1;
+  inset: 20px 28px;
+  background-color: rgba(2, 145, 139, 0.85);
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.8s;
+  padding: 55px 35px;
+}
+#mywork .mywork_item:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+#mywork .mywork_item {
+  position: relative;
+}
+#mywork .mywork_item .overlay h4 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #ffffff;
+  text-align: center;
+}
+#mywork .mywork_item .overlay p {
+  font-size: 13px;
+  text-align: center;
+  color: #ffffff;
+  line-height: 21px;
+}
+/* My Work css end */
+
+/* Contract css end  */
+/* UpDown btn css start */
+#upDwn-btn {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  padding: 25px;
+  color: var(--dark-color);
+  font-size: 20px;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid black;
+  z-index: 999;
+  transition: 0.6s;
+}
+#upDwn .upDwn-btn:hover {
+  background-color: #0ef;
+  box-shadow: 0 0 10px #0ef;
+}
+/* UpDown btn css end */
+/* Contract css start  */
+#contract p {
+  width: 680px;
+  padding: 0 0 75px 0;
+}
+#contract .contact-info {
+  background-color: #0a0a0b;
+  padding: 60px 0 97px 0;
+}
+#contract .contact-info input,
+#contract .contact-info textarea {
+  text-align: center;
+  display: block;
+  background: none;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #7e8287;
+  padding: 18px;
+  margin: auto;
+  margin-bottom: 51px;
+  border: none;
+  border-bottom: 1px solid #7e8287;
+}
+#contract .contact-info input:nth-child(1),
+#contract .contact-info input:nth-child(2) {
+  width: 639px;
+}
+#contract .contact-info input:nth-child(3),
+#contract .contact-info textarea {
+  width: 920px;
+}
+#contract .contact-info textarea {
+  resize: none;
+  font-family: "Open Sans", sans-serif;
+}
+#contract .contact-info input::placeholder,
+#contract .contact-info textarea::placeholder{
+  text-transform: uppercase;
+}
+#contract .contact-info button {
+  color: var(--secondary-color);
+  background: var(--highlight-color);
+  padding: 20px 42px;
+  display: block;
+  font-size: 14px;
+  border: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: 0.7s;
+  margin: auto;
+}
+#contract .contact-info button:hover {
+  color: #0b1016;
+  background-color: #0ef;
+  box-shadow: 0 0 10px #0ef;
+  border: none;
+  border-radius: 15px;
+}
+#footer{
+  background-color: var(--dark-color);
+  color: #7e8287;
+  text-align: center;
+  font-size: 12px;
+  padding:35px 0 35px 0;
+}
